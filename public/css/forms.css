@@ -1,0 +1,81 @@
+.login-form {
+    width: 20rem;
+    max-width: 90%;
+    margin: auto;
+    display: block;
+}
+
+.form-control {
+    margin: 1rem 0;
+    /* border: 1px solid black; */
+}
+
+.form-control label,
+.form-control input,
+.form-control textarea {
+    display: block;
+    width: 90%;
+    margin: 0 auto 0.25rem;
+}
+
+.form-control input,
+.form-control textarea {
+    border: 1px solid #a1a1a1;
+    font: inherit;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.form-control input:focus,
+.form-control textarea:focus {
+    outline-color: #0384fc;
+    padding: 5px;
+}
+
+.add-contact-form {
+    width: 100%;
+    /* max-width: 90%; */
+    margin: auto;
+    display: block;
+    /* border: 1px solid black; */
+}
+
+.telNmail{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto 0.25rem;
+}
+
+.plus-icon{
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.form-control input.invalid{
+    border-bottom: 2px solid red;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+    text-align: center;
+}
+
+button.form-button{
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    font-size: xx-large;
+}
