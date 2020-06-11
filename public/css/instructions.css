@@ -1,0 +1,21 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.instructions__outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.instructions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    text-transform: uppercase;
+    padding: 30px;
+    width: 60%;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    margin-top: 50px;
+}

@@ -152,3 +152,9 @@ exports.getHighScore = (req, res, next) => {
             })
         })
 }
+
+exports.getInstructionsPage = (req, res, next) => {
+    res.render('instructions', {
+        pageTitle: 'Instructions'
+    })
+}
