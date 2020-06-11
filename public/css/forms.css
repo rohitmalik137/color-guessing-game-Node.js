@@ -1,8 +1,16 @@
+.main{
+    display: flex;
+    align-items: center;
+    height: 500px;
+}
 .login-form {
     width: 20rem;
     max-width: 90%;
     margin: auto;
     display: block;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
 }
 
 .form-control {
@@ -56,10 +64,17 @@
     border-bottom: 2px solid red;
 }
 
+input{
+    background-color: transparent;
+    color: white;
+}
+::placeholder{
+    color: rgba(255, 255, 255, 0.7);
+}
+
 .grid-container{
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    background-color: #2196F3;
     padding: 10px;
     text-align: center;
 }
@@ -74,9 +89,61 @@ button.form-button{
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    width: 200px;
-    height: 200px;
+    width: 15vw;
+    height: 30vh;
     border: 1px solid black;
     border-radius: 10px;
     font-size: xx-large;
+}
+
+@media only screen and (max-width: 800px) {
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    button.form-button{
+        border: none;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        width: 20vw;
+        height: 30vh;
+        border: 1px solid black;
+        border-radius: 10px;
+        font-size: xx-large;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    button.form-button{
+        border: none;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        width: 25vw;
+        height: 20vh;
+        border: 1px solid black;
+        border-radius: 10px;
+        font-size: xx-large;
+    }
 }

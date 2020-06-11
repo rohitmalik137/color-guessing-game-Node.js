@@ -38,7 +38,7 @@ exports.postLogin = (req, res, next) => {
                     const colorsAdd = new Color({
                         color: colorss,
                         answerColor: colorss,
-                        level: -1,
+                        level: 0,
                         dummy: 'dummy'
                     });
                     return colorsAdd.save()
@@ -119,7 +119,7 @@ exports.getStartGamePage = (req, res, next) => {
             const colorss = shuffleArray.data.shuffle(colors);
             if(color.length != 0){
                 color.color = colorss;
-                color.level = color.level + 1;
+                color.level = 1;
                 return color.save()
                     .then(() => {
                         // console.log('Updated!!');

@@ -8,6 +8,13 @@
     <title><%= pageTitle %></title>
 </head>
 <body>
-    <h2 class="centered">Hello <span style="font-size: larger;"><%= user.username %></span>, Your high score is <span style="font-size: larger;"><%= user.score %></span> </h2>
+    <% if(user.score >= 40) { %>
+        <h2 class="centered">Excellent <span style="font-size: larger;"><%= user.username %></span>, Your high score is <span style="font-size: larger;"><%= user.score %>/60.</span>Keep it up! </h2>
+    <% } else if(user.score >= 0) { %>
+    <h2 class="centered">Hello <span style="font-size: larger;"><%= user.username %></span>, Your high score is <span style="font-size: larger;"><%= user.score %>/60.</span> </h2>
+    <% } else { %>
+        <h2 class="centered">Poor Performance <span style="font-size: larger;"><%= user.username %></span>, Your high score is <span style="font-size: larger;"><%= user.score %>/60.</span> Better Luck next time! </h2>
+    <% } %>
+    <a href="/" class="btn centered" style="display: block;">Play Again</a>
 </body>
 </html>
