@@ -16,6 +16,19 @@ var methods = {
         }
 
         return array;
+    },
+
+    getFibonnaciNumber: function(num){
+        if(num == 1 || num == 2) return 1;
+        var a = 0;
+        var b = 1;
+        c = a + b;
+        for(var i=0; i<(num-2); i++){
+            a = b;
+            b = c;
+            c = a + b;
+        }
+        return c;
     }
 }
 

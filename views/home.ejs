@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/forms.css">
+    <link rel="stylesheet" href="/css/main.css">
     <title><%= pageTitle %></title>
 </head>
 <body>
-    <h1>Hello there!!</h1>
+    <h2>Hello there!!</h2><h1>Remember the position of all the colors!</h1>
+    <h3>Are You Ready</h3><span class="btn"><a href="/startgame" class="anchor">Start Game</a></span>
     <div class="grid-container">
         <% for (var i =0; i < 10;  i++ ) { %>
             <div class="grid-item">
-                <form class="game-button-form" action="evaluate" method="POST">
-                    <input type="hidden" name="colorname" value="<%= colorsArr[i] %>">
                     <button type="submit" class="form-button" style="background-color: <%= colorsArr[i] %>;"><%= i+1 %></button>
-                </form>
             </div>
         <% } %>
     </div>

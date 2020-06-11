@@ -18,6 +18,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(homeRoutes);
 
+app.use('/', (req, res, next) => {
+  res.send('<h1>Page Not Found!!</h1>');
+})
+
 const port = process.env.PORT || 3000;
 
 mongoose

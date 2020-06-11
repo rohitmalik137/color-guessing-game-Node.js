@@ -6,6 +6,18 @@ const colorSchema = new Schema({
   color: {
     type: Array,
     required: true
+  },
+  answerColor: {
+    type: Array,
+    required: true
+  },
+  level: {
+    type: Number,
+    required: true
+  },
+  dummy: {
+    type: String,
+    required: true
   }
 });
 

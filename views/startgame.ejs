@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/forms.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <title><%= pageTitle %></title>
+</head>
+<body>
+    <h1>Welcome to Level <%= colorsArr.level %></h1>
+    <h2>Guess the color which was on <span style="font-size: larger;"><%= fibonnaci %></span> index</h2>
+    <div class="grid-container">
+        <% for (var i =0; i < 10;  i++ ) { %>
+            <div class="grid-item">
+                <form class="game-button-form" action="<%= lastLevel === 'yes' ? 'showScore' : 'evaluate' %>" method="POST">
+                    <input type="hidden" name="colorname" value="<%= colorsArr.color[i] %>">
+                    <input type="hidden" name="level" value="<%= colorsArr.level %>">
+                    <button type="submit" class="form-button" style="background-color: <%= colorsArr.color[i] %>;"><%= i+1 %></button>
+                </form>
+            </div>
+        <% } %>
+    </div>
+</body>
+</html>

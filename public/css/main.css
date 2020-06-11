@@ -58,3 +58,12 @@ body{
     background: rgb(255, 178, 178);
     color: red;
   }
+
+.anchor{
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+.anchor:hover{
+  color: white;
+}

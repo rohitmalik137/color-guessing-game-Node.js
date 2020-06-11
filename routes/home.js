@@ -8,6 +8,8 @@ router.post('/login', homeController.postLogin);
 
 router.get('/home', homeController.homePage);
 
-router.post('/evaluate', homeController.getEvaluate)
+router.post('/evaluate', homeController.getEvaluate);
+router.post('/showScore', homeController.getHighScore);
+router.get('/startgame', homeController.getStartGamePage);
 
 module.exports = router;
