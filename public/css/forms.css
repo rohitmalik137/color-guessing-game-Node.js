@@ -1,42 +1,39 @@
 .main{
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 500px;
 }
 .login-form {
-    width: 20rem;
-    max-width: 90%;
+    /* width: 20rem; */
+    max-width: 100%;
     margin: auto;
     display: block;
-    padding: 20px;
-    border: 2px solid black;
     border-radius: 20px;
 }
 
 .form-control {
-    margin: 1rem 0;
+    margin: 2rem 0;
     /* border: 1px solid black; */
 }
 
-.form-control label,
-.form-control input,
-.form-control textarea {
+
+.form-control input {
     display: block;
     width: 90%;
     margin: 0 auto 0.25rem;
-}
-
-.form-control input,
-.form-control textarea {
-    border: 1px solid #a1a1a1;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
     font: inherit;
     border-radius: 2px;
     padding: 5px;
 }
 
-.form-control input:focus,
-.form-control textarea:focus {
-    outline-color: #0384fc;
+.form-control input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
     padding: 5px;
 }
 
@@ -70,6 +67,11 @@ input{
 }
 ::placeholder{
     color: rgba(255, 255, 255, 0.7);
+    font-size: x-large;
+}
+#username{
+    padding: 10px;
+    font-size: x-large;
 }
 
 .grid-container{

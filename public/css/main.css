@@ -14,11 +14,24 @@ body{
   .centered {
     text-align: center;
   }
+
+  .main_name{
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 100px;
+    padding: 20px;
+    display: flex;
+    color: #b4c8fa;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    text-transform: uppercase;
+  }
   
   .btn {
     display: inline-block;
     padding: 0.25rem 1rem;
     text-decoration: none;
+    padding: 10px 25px;
     font: inherit;
     border: 1px solid white;
     color: white;

@@ -1,19 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/forms.css">
-    <link rel="stylesheet" href="/css/main.css">
-    <title><%= pageTitle %></title>
-</head>
+<%- include('includes/header.ejs') %>
 <body>
     <% if(user.score >= 40) { %>
-        <h2 class="centered">Excellent <span style="font-size: larger;"><%= user.username %></span>, Your high score is <span style="font-size: larger;"><%= user.score %>/60.</span>Keep it up! </h2>
+        <h2 class="centered">Excellent <span style="font-size: larger;"><%= user.username %></span>, Your score is <span style="font-size: larger;"><%= user.score %>/60.</span>Keep it up! </h2>
     <% } else if(user.score >= 0) { %>
-    <h2 class="centered">Hello <span style="font-size: larger;"><%= user.username %></span>, Your high score is <span style="font-size: larger;"><%= user.score %>/60.</span> </h2>
+    <h2 class="centered">Hello <span style="font-size: larger;"><%= user.username %></span>, Your score is <span style="font-size: larger;"><%= user.score %>/60.</span> </h2>
     <% } else { %>
-        <h2 class="centered">Poor Performance <span style="font-size: larger;"><%= user.username %></span>, Your high score is <span style="font-size: larger;"><%= user.score %>/60.</span> Better Luck next time! </h2>
+        <h2 class="centered">Poor Performance <span style="font-size: larger;"><%= user.username %></span>, Your score is <span style="font-size: larger;"><%= user.score %>/60.</span> Better Luck next time! </h2>
     <% } %>
     <a href="/" class="btn centered" style="display: block;">Play Again</a>
 </body>
