@@ -8,6 +8,8 @@
     <% } else { %>
         <h2 class="centered">Poor Performance <span style="font-size: larger;"><%= user.username %></span>, Your score is <span style="font-size: larger;"><%= user.score %>/60.</span> Better Luck next time! </h2>
     <% } %>
-    <a href="/" class="btn centered" style="display: block;">Play Again</a>
+    <form action="/logout" method="post" style="display: flex;">
+        <button type="submit" class="btn centered" style="margin: auto; width: 100%;">Play Again</button>
+    </form>
 </body>
 </html>

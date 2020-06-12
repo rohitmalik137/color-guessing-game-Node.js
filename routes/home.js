@@ -2,15 +2,19 @@ const express = require('express');
 const router = express.Router();
 
 const homeController = require('../controllers/home');
+const authController = require('../controllers/auth');
+const isAuth = require('../middleware/is-auth');
 
-router.get('/', homeController.getlogin);
-router.post('/login', homeController.postLogin);
+router.get('/', authController.getlogin);
+router.post('/', authController.postLogin);
 
-router.get('/home', homeController.homePage);
+router.post('/logout', authController.postLogout);
 
-router.post('/evaluate', homeController.getEvaluate);
-router.post('/showScore', homeController.getHighScore);
-router.get('/startgame', homeController.getStartGamePage);
-router.get('/instructions', homeController.getInstructionsPage);
+router.get('/home', isAuth, homeController.homePage);
+
+router.post('/evaluate', isAuth, homeController.getEvaluate);
+router.post('/showScore', isAuth, homeController.getHighScore);
+router.get('/startgame', isAuth, homeController.getStartGamePage);
+router.get('/instructions', isAuth, homeController.getInstructionsPage);
 
 module.exports = router;
