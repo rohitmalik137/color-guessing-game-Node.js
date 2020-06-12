@@ -1,83 +1,51 @@
 body{
-    overflow-x: hidden;
-    background-image: url('/1116146294-login-page-background-image-112.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #007db3;
-    color: white;
-  }
-  form{
-    display: inline;
-  }
-  
-  .centered {
-    text-align: center;
-  }
+  overflow-x: hidden;
+  background-image: url('/1116146294-login-page-background-image-112.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #007db3;
+  color: white;
+}
+form{
+  display: inline;
+}
 
-  .main_name{
-    font-family: 'Fredericka the Great', cursive;
-    font-size: 100px;
-    padding: 20px;
-    display: flex;
-    color: #b4c8fa;
-    align-items: center;
-    width: 100%;
-    margin: auto;
-    text-transform: uppercase;
-  }
-  
-  .btn {
-    display: inline-block;
-    padding: 0.25rem 1rem;
-    text-decoration: none;
-    padding: 10px 25px;
-    font: inherit;
-    border: 1px solid white;
-    color: white;
-    background: transparent;
-    border-radius: 3px;
-    cursor: pointer;
-    margin: 5px;
-  }
-  
-  .btn:hover,
-  .btn:active {
-    background-color: white;
-    color: black;
-  }
-  
-  .btn.danger {
-    color: red;
-    border-color: red;
-  }
-  
-  .btn.danger:hover,
-  .btn.danger:active {
-    background: red;
-    color: white;
-  }
-  
-  i{
-    cursor: pointer;
-    }
-  
-  .user-message{
-    margin: auto;
-    padding: .5rem;
-    border: 1px solid rgb(95, 95, 255);
-    width: 75%;
-    border-radius: 3px;
-    background: rgb(173, 173, 255);
-    text-align: center;
-  }
-  
-  .user-message--error{
-    border: 1px solid red;
-    background: rgb(255, 178, 178);
-    color: red;
-  }
+.centered {
+  text-align: center;
+}
 
+.main_name{
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 100px;
+  display: flex;
+  justify-content: space-around;
+  color: #b4c8fa;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  text-transform: uppercase;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.25rem 1rem;
+  text-decoration: none;
+  padding: 10px 25px;
+  font: inherit;
+  border: 1px solid white;
+  color: white;
+  background: transparent;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: white;
+  color: black;
+}
 .anchor{
   text-decoration: none;
   color: black;

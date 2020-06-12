@@ -5,19 +5,14 @@
     height: 500px;
 }
 .login-form {
-    /* width: 20rem; */
     max-width: 100%;
     margin: auto;
     display: block;
     border-radius: 20px;
 }
-
 .form-control {
     margin: 2rem 0;
-    /* border: 1px solid black; */
 }
-
-
 .form-control input {
     display: block;
     width: 90%;
@@ -28,37 +23,6 @@
     font: inherit;
     border-radius: 2px;
     padding: 5px;
-}
-
-.form-control input:focus {
-    border: none;
-    outline: none;
-    border-bottom: 2px solid black;
-    padding: 5px;
-}
-
-.add-contact-form {
-    width: 100%;
-    /* max-width: 90%; */
-    margin: auto;
-    display: block;
-    /* border: 1px solid black; */
-}
-
-.telNmail{
-    display: flex;
-    justify-content: space-between;
-    width: 95%;
-    margin: 0 auto 0.25rem;
-}
-
-.plus-icon{
-    margin-left: 10px;
-    cursor: pointer;
-}
-
-.form-control input.invalid{
-    border-bottom: 2px solid red;
 }
 
 input{
